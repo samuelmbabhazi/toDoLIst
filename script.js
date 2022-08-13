@@ -6,7 +6,7 @@ add.addEventListener("click", () => {
   if (input.value.trim() != 0) {
     let newItem = document.createElement("div");
     newItem.classList.add("item");
-    newItem.innerHTML = `<p style="outline: none" contenteditable><input type="checkbox" class="coche"> ${input.value}<p><div><img class="trash" src="./trash-can-solid.svg" alt="" width="15px"></div>`;
+    newItem.innerHTML = `<p style="outline: none" ><input type="checkbox" class="coche"> ${input.value}<p><div><img class="trash" src="./trash-can-solid.svg" alt="" width="15px"></div>`;
     tache.appendChild(newItem);
     input.value = "";
   } else {
