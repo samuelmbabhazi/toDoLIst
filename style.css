@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(36, 78, 62);;
+  height: 100%;
+  padding-bottom: 40px;
+  align-items: center;
+  
+}
+h1{
+    text-shadow: 8px 8px 8px ;
+}
+main {
+  text-align: center;
+}
+
+#content {
+  display: flex;
+  margin: auto;
+  width: 450px;
+  padding: 20px;
+  box-shadow: 0px 10px 40px rgba(138, 141, 139, 0.401);
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.img {
+  filter: grayscale(1) invert(1);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+#entre-list {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  width: 360px;
+}
+.add-list {
+  border: none;
+  background-color: rgb(36, 78, 62);
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+}
+.taches {
+  width: 100%;
+  margin-top: 30px;
+}
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid gray;
+}
+.item p {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #111;
+  letter-spacing: 1px;
+  width: auto;
+  display: flex;
+  gap: 5px;
+}
+p i:last-child {
+  margin-left: 200px;
+}
+
+.item.completed p {
+  text-decoration: line-through;
+  color: black;
+}
+input[type="checkbox"] {
+  accent-color:  rgb(36, 78, 62);
+}
+@media screen and (max-width: 900px) {
+  div#content {
+    margin-top: 30px;
+    width: 80vw;
+    margin: auto;
+  }
+  #entre-list{
+    width: 95%;
+  }
+}
