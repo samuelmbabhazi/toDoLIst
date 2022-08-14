@@ -43,22 +43,26 @@ main {
   grid-template-columns: 4fr 1fr;
 }
 #entre-list {
-  
+  outline: none;
   padding: 10px;
   border: none;
   font-size: 16px;
   background-color: #111;
   color: #fff;
-  width: 350px;
+  width: 430px;
   height: 20px;
 }
 .add-list {
+  position: absolute;
+  top: 20px;
+  left: 400px;
   border: none;
   background-color: rgb(4, 60, 38);
   font-size: 16px;
   color: #fff;
   cursor: pointer;
   width: 70px;
+  height: 40px;
   
   
 }
