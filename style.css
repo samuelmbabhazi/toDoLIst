@@ -1,17 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, serif;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(36, 78, 62);;
+  background-color: rgb(36, 78, 62);
   height: 100%;
   padding-bottom: 40px;
   align-items: center;
-  
 }
-h1{
-    text-shadow: 8px 8px 8px ;
+h1 {
+  text-shadow: 8px 8px 8px;
 }
 main {
   text-align: center;
@@ -22,9 +21,16 @@ main {
   margin: auto;
   width: 450px;
   padding: 20px;
-  box-shadow: 0px 10px 40px rgba(138, 141, 139, 0.401);
-  border-radius: 5px;
-  background-color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 255, 255, 0.1),
+    rgb(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.37);
+  border: 1px solid rgb(255, 255, 255, 0.18);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -37,21 +43,24 @@ main {
   grid-template-columns: 4fr 1fr;
 }
 #entre-list {
+  
   padding: 10px;
   border: none;
   font-size: 16px;
-  border: none;
   background-color: #111;
   color: #fff;
-  width: 360px;
+  width: 350px;
+  height: 20px;
 }
 .add-list {
   border: none;
-  background-color: rgb(36, 78, 62);
+  background-color: rgb(4, 60, 38);
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  width: 50px;
+  width: 70px;
+  
+  
 }
 .taches {
   width: 100%;
@@ -84,7 +93,7 @@ p i:last-child {
   color: black;
 }
 input[type="checkbox"] {
-  accent-color:  rgb(36, 78, 62);
+  accent-color: rgb(4, 60, 38);
 }
 @media screen and (max-width: 900px) {
   div#content {
@@ -92,7 +101,7 @@ input[type="checkbox"] {
     width: 80vw;
     margin: auto;
   }
-  #entre-list{
+  #entre-list {
     width: 95%;
   }
 }
